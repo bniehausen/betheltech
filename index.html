@@ -1,21 +1,79 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Final Project</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="style.css">
 
-<head>
-    <title>Learning Git</title>
-    <meta charset="utf-8">
-</head>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    </head>
 
-<body>
-    <header style=background-color:lightblue>
-        <h3 style=text-align:center>Coding Structures: Lesson 9 Learning Git</h3>
-        <nav>
-            <ul>
-                <li><a href="https://bethel.com">Bethel</a></li>
-                <li><a href="https://betheltech.net">Bethel Tech</a></li>
-            </ul>
-        </nav>
-    </header>
+    <body>
+        <div class="container1">
+            <nav class="navbar">
+                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/cheese-design-template-96c2badc63138500fc186502e3301b3c_screen.jpg?ts=1626858631" alt="logo" width="40" height="40">
+            <div class="home"><strong>Home</strong></div>
+            <div class="resume"><strong>Resume</strong></div>
+            <div class="gallery"><strong>Gallery</strong></div>
+            <div class="contact"><strong>Contact</strong></div>
+        </div>
 
-</body>
+        <div class="container2">
+            <div class="row">
+                <div class="col-6">
+                    <h1 id="name" onmouseover="sizeUpName(this)" onmouseout="restoreOriginalName(this)">Brian Niehausen</h1>
+                    <h6 id="jobTitle" onmouseover="sizeUpTitle(this)" onmouseout="restoreOriginalTitle(this)" width="15px">Future Starting Quarterback of the Green Bay Packers</h6>
+                    <p>Hi, I'm Brian.  Someday soon you will see me taking over for Aaron Rodgers as the QB1 of the Green and Gold.  You will then subsequently see me in various poorly conceived car insurance commercials.</p>
+                </div>
+                <!-- Use DOM methods to create a hover effect to increase the size of the name and title elements -->
+                <div class="col-6">
+                    <img class="img-fluid" src="https://static01.nyt.com/images/2011/12/03/sports/jp-rodgers/jp-rodgers-articleLarge.jpg" alt="Me?" />
+                </div>
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class ="col-4">
+                <table class="row">
+                <div class ="col-4">
+                    <tr><h3>Technical Skills: </h3></tr>
+                    <tr><td>Experience with Madden Football</td></tr>
+                    <tr><td>Master of Sega Genesis</td></tr>
+                    <tr><td>Experienced YouTube viewer</td></tr>
+                </table>
+            </div>
+
+            <div class ="col-4">
+                <table class="row">
+                    <tr><h3>Soft Skills: </h3></tr>
+                    <tr><td>People love me</td></tr>
+                    <tr><td>People fear me</td></tr>
+                    <tr><td>People fear how much they love me</td></tr>
+                    <tr><td>Best boss in the world</td></tr>
+                </table>
+            </div>
+
+            <div class ="col-4">
+                <table class="row">
+                    <tr><h3>Hobbies: </h3></tr>
+                    <tr><td>Winning NFL MVP awards</td></tr>
+                    <tr><td>Rewatching the Office</td></tr>
+                    <tr><td>Quoting things that no one else gets</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="adviceMessage">
+            <h3>Advice for the day:</h3>
+            <div id="adviceWrapper"></div>
+        </div>
+
+        <footer><a href="https://github.com/bniehausen/betheltech.git">Github</footer>
+
+        <script src="script.js"></script> 
+    </body>
 </html>
